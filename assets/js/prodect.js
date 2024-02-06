@@ -68,7 +68,7 @@ fav:"gray",
 category:"Jaket",
 price:99.0,
 title:"Black Short Jacket",
-imgUrl:"./assets/images/PRODECTS/collect4.jpg",
+imgUrl:"./assets/images/collect4.jpg",
 },
 {
     id:3,
@@ -188,11 +188,12 @@ function addToCart(id){
         drowList();
 }
 function drowList(){
+    
+    cartList.innerHTML="";
+   if(localStorage.getItem('items')){
     let cart_Products= JSON.parse(localStorage.getItem('items')) ;
 
     number.innerHTML=cart_Products.length;
-    cartList.innerHTML="";
-   if(localStorage.getItem('items')){
     if(cart_Products.length !=0){
    let items= JSON.parse(localStorage.getItem('items')) 
    items.map((item)=>{
