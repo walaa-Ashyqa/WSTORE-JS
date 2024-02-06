@@ -111,17 +111,8 @@ imgUrl:"./assets/images/PRODECTS/LONGJACKET1.jpg",
                         price:50.0,
                         title:"leather shoulder bag",
                         imgUrl:"./assets/images/PRODECTS/collect3.jpg",
-                        },
-                    {
-                        id:9,
-                        count:1,
-                        fav:"gray",
-                        category:"Bag",
-                        price:50.0,
-                        title:"Sustainable leather shoulder bag",
-                        imgUrl:"./assets/images/PRODECTS/bag1.jpg",
-                        },
-
+                        }
+                  
 ]
 
 function fillProdect(){
