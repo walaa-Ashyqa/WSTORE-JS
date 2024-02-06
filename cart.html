@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudects</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./assets/css/all.css"/>
+   
+    <link rel="stylesheet" href="./assets/fontawesome/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+</head>
+<body>
+    <!-- <Header>
+  
+        <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav  mb-2 mb-lg-0"  >
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="login.html">Sing in</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="register.html">Sing up</a>
+                      </li>
+                    <li class="nav-item user_info">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item user_info">
+                      <a class="nav-link " href="#"  >Pricing</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+          </nav>
+ </Header>
+    
+    <section class="section-form">
+        <h2>Register User</h2>
+        <form >
+            <input type="text" placeholder="Enter Username" id="username">
+            <input type="email" placeholder="Enter email" id="email">
+            <input type="password" placeholder="Enter password" id="password">
+
+            <input type="submit" value= "sign up" id="sign_up">
+        </form>
+    </section> -->
+    <header class=" header1">
+      <!--navbar sec-->
+      <nav class="navbar navbar-expand-lg  fixed-top navbar-light">
+          <div class="container">
+              <a class="navbar-brand" href="./index.html">
+                  <img src="assets/images/Asset 1@2x.png" alt="Portfolio website logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item me-4">
+                          <a class="nav-link px-0 active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item me-4">
+                          <a class="nav-link px-0 " href="./index.html">Service</a>
+                      </li>
+                     
+                      <li class="nav-item me-4">
+                        <a class="nav-link px-0" href="./index.html">Contact </a>
+                    </li>
+                    <li class="nav-item me-4">
+                      <a class="nav-link px-0" href="./prudects.html">Prudects </a>
+                  </li>
+                  <li class="nav-item me-4 ms-5 disable">
+                    <span class="nav-link text-dark px-0" id="username"  >name</span>
+                </li>
+                <li id="cart"class="nav-item  cart  disable">
+                  <a class="nav-link " href="#">
+                   <i class="fa-solid fa-cart-shopping rounded-5"></i> 
+                   <span id="number" class="badge rounded-5">0</span>
+                    </a>
+                    <div class="cart_prodects  py-1 disable2">
+                      <ul  id="favouriteItems">
+                      </ul>
+                         <a class="nav-link px-0" href="./cart.html" onclick="viewProduct()">View All Prodects</a>
+                    </div>
+              </li>
+              <li class="nav-item  ms-4 disable">
+             
+                <a class="nav-link text-dark px-0 " href="./wishlist.html" id="wishlist">Wish list</a>
+            </li>
+            <li class="nav-item  ms-4 disable">
+                 
+              <a class="nav-link  px-0 " href="./login.html" id="Signout">Sign out</a>
+          </li>   
+                      
+                  </ul>
+                 
+              </div>
+          </div>
+      </nav>
+      <!--end navbar sec-->
+
+    </header>
+      <section id="Service" class="services pt-5 mt-5">
+        <div class="container">
+            <div class="title d-flex flex-column align-items-center">
+                <div>
+                     <h2 >Your Cart</h2>
+                </div>
+            </div>
+            <div class="container py-4 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body p-4">
+          
+                      <div class="row">
+          
+                        <div class="col-lg-7">
+                          <h5 class="mb-3"><a href="#!" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a></h5>
+                          <hr>
+          
+                          <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div>
+                              <p class="mb-1">Shopping cart</p>
+                              <p class="mb-0">You have <span id="cart_count"></span> items in your cart</p>
+                            </div>
+                            <div>
+                              <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!"
+                                  class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
+                            </div>
+                          </div>
+          <div class="prodects_cart"></div>
+          <div class="remove my-4">
+            <button id="remove_button" onclick=" clearAll()" type="button" class="btn btn-dark btn-block rounded-3 p-2 px-3 ">
+              <div class="d-flex justify-content-between">
+               
+                <span class="ms-1" >  Clear All <i class="fas fa-trash-alt ms-1 p-1   "></i></span>
+              </div>
+            </button>
+          </div>  
+          
+                        </div>
+                        <div class="col-lg-5">
+          
+                          <div class="card bg-dark text-white rounded-3">
+                            <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="mb-0">Card details</h5>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                                  class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                              </div>
+          
+                              <p class="small mb-2">Card type</p>
+                              <a href="#!" type="submit" class="text-white"><i
+                                  class="fab fa-cc-mastercard fa-2x me-2"></i></a>
+                              <a href="#!" type="submit" class="text-white"><i
+                                  class="fab fa-cc-visa fa-2x me-2"></i></a>
+                              <a href="#!" type="submit" class="text-white"><i
+                                  class="fab fa-cc-amex fa-2x me-2"></i></a>
+                              <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
+          
+                              <form class="mt-4">
+                                <div class="form-outline form-white mb-4">
+                                  <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                    placeholder="Cardholder's Name" />
+                                  <label class="form-label" for="typeName">Cardholder's Name</label>
+                                </div>
+          
+                                <div class="form-outline form-white mb-4">
+                                  <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                    placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                                  <label class="form-label" for="typeText">Card Number</label>
+                                </div>
+          
+                                <div class="row mb-4">
+                                  <div class="col-md-6">
+                                    <div class="form-outline form-white">
+                                      <input type="text" id="typeExp" class="form-control form-control-lg"
+                                        placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                                      <label class="form-label" for="typeExp">Expiration</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-outline form-white">
+                                      <input type="password" id="typeText" class="form-control form-control-lg"
+                                        placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                      <label class="form-label" for="typeText">Cvv</label>
+                                    </div>
+                                  </div>
+                                </div>
+          
+                              </form>
+          
+                              <hr class="my-4">
+          
+                              <div class="d-flex justify-content-between">
+                                <p class="mb-2">Subtotal</p>
+                                <p class="mb-2" id="subtotal">$00.00</p>
+                              </div>
+          
+                              <div class="d-flex justify-content-between">
+                                <p class="mb-2">Shipping</p>
+                                <p class="mb-2">$20.00</p>
+                              </div>
+          
+                              <div class="d-flex justify-content-between mb-4">
+                                <p class="mb-2">Total(Incl. taxes)</p>
+                                <p class="mb-2" id="total_price" >$00.00</p>
+                              </div>
+          
+                              <button type="button" class="btn btn-dark btn-block btn-lg Checkout_button">
+                                <div class="d-flex justify-content-between">
+                                  <span id="Checkout_price">$00.00</span>
+                                  <span class="ms-1">  Checkout <i class="fas fa-long-arrow-alt-right ms-1"></i></span>
+                                </div>
+                              </button>
+          
+                            </div>
+                          </div>
+          
+                        </div>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      
+      <footer class="py-5">
+        <div class="container my-5">
+        
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+              </div>
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label htmlfor="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                    <button class="btn btn-dark border-0 rounded-5  subscribe " type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>© 2024 Company, Inc. All rights reserved.</p>
+          
+            </div>
+         
+        </div>
+        </footer>
+        <!---------------------------------End footer ------------------------------------>
+         
+      <script src="./assets/js/cart.js"></script>
+      <script src="./assets/js/signout.js"> </script>
+
+</body>
+</html>

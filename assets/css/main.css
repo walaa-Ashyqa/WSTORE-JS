@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700;800&display=swap');
+
+/*font-family: 'Dosis', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;900&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+/***public***/
+
+:root {
+  --maincolor: #D69359
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-main-color {
+
+  background-color: var(--maincolor);
+}
+
+.text-main-color {
+
+  color: var(--maincolor);
+}
+
+.border-main-color {
+  border-color: var(--maincolor) !important;
+
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+}
+
+/***navbar***/
+
+
+.navbar .nav-link {
+  padding-block: 10px;
+  position: relative;
+  color: rgb(129, 129, 129);
+}
+
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--maincolor);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.navbar .nav-link.active::after {
+
+  width: 100%;
+
+}
+
+.navbar .nav-link.active:hover::after {
+
+  width: 70%;
+
+
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+
+}
+
+/***header***/
+
+header {
+  background-image: url("../images/smiley-woman-holding-shopping-bags-pointing-possible-store-sale.jpg");
+  background-size: cover;
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+header p,
+header span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+}
+
+.navbar a span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+.navbar a i {
+  font-size: 13px;
+}
+
+.cart a i {
+  padding: 10px;
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart_prodects {
+  display: none;
+  position: absolute;
+  right: -15%;
+  margin-top: 52px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  width: 200px;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  padding-right: 5px;
+}
+
+#favouriteItems li {
+
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#favouriteItems li .plus {
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.disable2 {
+  display: none;
+}
+
+.badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--maincolor);
+  display: block;
+}
+
+header .icons i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+header .icons i:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+header h1 {
+  font-family: 'Dosis', sans-serif;
+}
+
+header span,
+header p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.shoping-button button {
+  background-color: var(--maincolor);
+  padding: 10px 30px;
+}
+
+.title2 {
+  color: white !important;
+  position: absolute;
+  top: 0;
+  left: -10px
+}
+
+.title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.header-content p {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #3333;
+  animation: typing 3s infinite alternate-reverse steps(27);
+  -webkit-animation: typing 3s infinite alternate-reverse steps(27) both, blink infinite 0.7s;
+}
+
+@keyframes typing {
+  form {
+    width: 0;
+  }
+
+  to {
+    width: 335px;
+  }
+}
+
+@keyframes blink {
+  form {
+    border-color: #333333cc;
+  }
+
+  to {
+    border-color: #3333334b;
+  }
+}
+
+.disable {
+  display: none;
+}
+
+/***services***/
+
+
+.service-img {
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+/***contact***/
+.contact {
+  background: linear-gradient(rgba(62, 62, 62, 0.85), rgba(100, 100, 100, 0.85)), url(../images/backgrond.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contact .title span {
+  color: white;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid white !important;
+  box-shadow: none;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: white;
+}
+
+.custom-btn {
+
+
+  background-color: var(--maincolor);
+}
+
+/***footer***/
+footer {
+  background-color: #f3f3f3;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #818181 !important;
+}
+
+footer .subscribe {
+  background-color: var(--maincolor);
+  padding: 5px 15px;
+}
+
+/************* sign in****************/
+.header1 {
+  position: static;
+
+
+}
+
+.section-signin {
+  padding-top: 70px;
+}
+
+.signin-img {
+
+  padding-top: 5%;
+}
+
+.signin-img img {
+  width: 100%;
+}
+
+.signin-text {
+  align-self: center;
+  padding: 5%;
+}
+
+.form-button button {
+  background-color: var(--maincolor);
+  border: none;
+
+}
+
+.secound-button button {
+  color: var(--maincolor);
+  border-color: var(--maincolor) !important;
+
+}
+
+/***********prodects********/
+
+.search-box {
+
+  width: 90%;
+  margin: 5px auto;
+
+}
+
+/********cart*********/
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+
+.Checkout_button {
+  background-color: var(--maincolor);
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W STORE</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./assets/css/all.css"/>
+   
+    <link rel="stylesheet" href="./assets/fontawesome/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+
+</head>
+<body>
+
+ <!-- <Header>
+  
+        <nav class="navbar navbar-expand-lg  bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav  mb-2 mb-lg-0"  >
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="login.html">Sing in</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="register.html">Sing up</a>
+                      </li>
+                    <li class="nav-item user_info">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item user_info">
+                      <a class="nav-link " href="#"  >Pricing</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+          </nav>
+ </Header> -->
+ <header class=" header vh-100">
+  <!--navbar sec-->
+  <nav class="navbar navbar-expand-lg  fixed-top navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="./index.html">
+              <img src="assets/images/Asset 1@2x.png" alt="Portfolio website logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-4">
+                      <a class="nav-link px-0 active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-4">
+                      <a class="nav-link px-0 " href="#Service">Service</a>
+                  </li>
+                 
+                  <li class="nav-item me-4">
+                    <a class="nav-link px-0" href="#Contact">Contact </a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link px-0" href="./prudects.html">Prudects </a>
+              </li>
+              
+              <li class="nav-item me-4 ms-4 disable">
+                <span class="nav-link text-dark px-0" id="username" >name</span>
+            </li>
+            
+            <li id="cart"class="nav-item  cart  disable">
+              <a class="nav-link " href="#">
+               <i class="fa-solid fa-cart-shopping rounded-5"></i> 
+               <span id="number" class="badge rounded-5">0</span>
+                </a>
+                <div class="cart_prodects  py-1 disable2">
+                  <ul  id="favouriteItems">
+                  </ul>
+                     <a class="nav-link px-0" href="./cart.html" onclick="viewProduct()">View All Prodects</a>
+                </div>
+          </li>
+          <li class="nav-item  ms-4 disable">
+             
+            <a class="nav-link text-dark px-0 " href="./wishlist.html" id="wishlist">Wish list</a>
+        </li>
+        <li class="nav-item  ms-4 disable">
+             
+          <a class="nav-link  px-0 " href="./login.html"  id="signOut">Sign out</a>
+      </li>
+                  <li class="nav-item me-4 links">
+                      <a class="nav-link px-0 " href="./login.html">Sign in</a>
+                  </li>
+               
+                
+              </ul>
+              <a href="./register.html"
+                  class="links text-decoration-none bg-main-color text-white px-3 py-1 rounded-pill button-rotate">
+                  <span class="text-capitalize hire">Sign up</span>
+              </a>
+              
+          </div>
+      </div>
+  </nav>
+  <!--end navbar sec-->
+
+  <div class="container">
+      <div class=" header-content d-flex flex-column justify-content-center vh-100 align-items-end">
+          <span>TRENDING NOW</span>
+
+          <h1>WOMEN'S COLLECTION
+          </h1>
+          <p>what's the new COLLECTION!</p>
+
+
+          <div class="shoping-button">
+            <button type="button" class="btn btn-dark border-0 rounded-5 ">SHOPPING NOW</button>
+          </div>
+      </div>
+
+  </div>
+</header>
+
+<!---------------------------------End header------------------------------------>
+<section id="Service" class="services py-5 my-5">
+  <div class="container">
+      <div class="title d-flex flex-column align-items-center">
+          <div>
+              <span class=" text-uppercase border-bottom pe-2 pb-1 border-main-color">SERVICE</span>
+              <h2 class="ps-4 pt-2">NEW COLLECTION</h2>
+          </div>
+      </div>
+      <div class="row pt-5">
+          <div class="col-lg-4 col-md-6 service-item text-center py-3 ">
+              <a href="./prudects.html"><img class="service-img" src="./assets/images/collect2.jpg" alt="Creativity logo" /></a>
+              <h6 class="my-3">Sweater Collection</h6>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item text-center py-3 ">
+            <a href="./prudects.html"><img class="service-img" src="./assets/images/collect4.jpg" alt="Creativity logo" /></a>
+            <h6 class="my-3">Jacket Collection</h6>
+        </div>
+        <div class="col-lg-4 col-md-6 service-item text-center py-3 ">
+          <a href="./prudects.html"><img class="service-img" src="./assets/images/collect3.jpg" alt="Creativity logo" /></a>
+          <h6 class="my-3">Bags and Shoes Collection</h6>
+      </div>
+     
+   
+  </div>
+  </div>
+</section>
+<!---------------------------------End Service------------------------------------>
+
+<section class="contact mt-5 py-5 text-center" id="Contact">
+  <div class="container py-5">
+      <div class="title d-flex justify-content-center text-white">
+          <div>
+              <span class="text-uppercase border-bottom pe-2 pb-1 border-white">Content</span>
+              <h2 class="ps-4 pt-2">Get in Touch</h2>
+          </div>
+      </div>
+      <p class="my-5 text-white w-65 m-auto ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur adipisci
+         tempore porro distinctio harum tenetur facere nostrum praesentium beatae impedit corrupti, 
+         atque maiores consectetur libero perspiciatis veritatis quibusdam ipsa saepe.</p>
+
+      <form class="w-75 m-auto">
+          <div class="row">
+              <div class="mb-3 col-md-6">
+                  <input type="text"
+                      class="form-control bg-transparent border-0 border-bottom border-white rounded-0 text-white"
+                      placeholder="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 col-md-6">
+                  <input type="text"
+                      class="form-control bg-transparent border-0 border-bottom border-white rounded-0 text-white"
+                      placeholder="Email">
+              </div>
+          </div>
+          <div class="mb-3 w-100">
+              <input type="text"
+                  class="form-control bg-transparent border-0 border-bottom border-white rounded-0 text-white"
+                  placeholder="Address">
+          </div>
+          <div class="mb-5">
+              <textarea
+                  class="form-control bg-transparent border-0 border-bottom border-white rounded-0 text-white"
+                  placeholder="Message.." id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+
+
+          <button type="submit"  class="py-3 px-4 border-0 rounded-5  d-inline-block custom-btn text-white">
+             send Message
+          </button>
+      </form>
+  </div>
+</section>
+
+<!---------------------------------End contact ------------------------------------>
+<footer class="py-5">
+<div class="container my-5">
+
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label htmlfor="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+            <button class="btn btn-dark border-0 rounded-5  subscribe " type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+  
+    </div>
+ 
+</div>
+</footer>
+<!---------------------------------End footer ------------------------------------>
+ 
+   
+    <script src="./assets/js/bootstrap.bundle.min.js"> </script>
+   
+  <script src="./assets/js/script.js"> </script>
+
+  <script src="./assets/js/signout.js"> </script>
+ 
+</body>
+</html>
