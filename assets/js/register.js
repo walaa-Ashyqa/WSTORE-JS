@@ -14,6 +14,7 @@ if(userName.value ==="" || userEmail.value ==="" || userPassword.value===""  )
 localStorage.setItem("userName",userName.value);
 localStorage.setItem("userEmail",userEmail.value);
 localStorage.setItem("userPassword",userPassword.value);
+alert("Success Sign up!")
 setTimeout( ()=>{window.location="login.html"},1500 )
 }
 })

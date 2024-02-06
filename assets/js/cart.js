@@ -217,6 +217,15 @@ function clearAll(){
    } 
 }
 ///////////////
+function Checkout(){
+  if(cartProducts.length !=0)
+  {
+   alert("Checkout Successfully!");
+   clearAll();
+  } 
+
+}
+///////////////
 function viewProduct(){
     location.assign('cart.html')
    }

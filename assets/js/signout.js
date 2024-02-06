@@ -10,6 +10,9 @@ signOutBtn.addEventListener("click",function(e){
 if(localStorage.getItem("userName") )
 {
     
+    localStorage.removeItem("userEmail");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("userPassword");
     localStorage.clear();
      alert("Success signout!")
     setTimeout(()=>{
